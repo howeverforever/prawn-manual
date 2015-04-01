@@ -24,5 +24,11 @@ p是左上角的點，width是x方向的長度、height是y方向的長度
 ## curve_to [x,y], :bounds => [[x1,y1],[x2,y2]]
 錨點滑到x,y上，路徑以(x1,y1), (x2,y2)為bound畫貝賽爾弧線
 
+## vertical_line y1, y2, :at => x
+相當於line [x, y1], [x, y2]
 
+## horizontal_line x1, x2, :at => y
+相當於line [x1, y], [x2, y]
 
+## rounded_rectangle [p.x, p.y], width, height, radius
+相當於rectangle，在於角落是半徑為radius的圓弧
